@@ -110,19 +110,23 @@ async function performServerAnalysis() {
         }
     }, 500);
 
-    try {
-        const response = await fetch('/api/analyze', {
+        try {
+        // Bypass the backend entirely for the standalone demo
+        state.dna = {
+            website: state.dna.website || "prometra.ai",
+            brandName: "Persona AI",
+            tagline: "Systemic modelling of growth architecture.",
+            industry: "Market Intelligence",
+            tone: "Ethereal & Precise",
+            aesthetic: "Noir Minimalist",
+            overview: "Systemic modelling of growth architecture, competitive density, and execution logic.",
+            values: ["Innovation", "Integrity", "Speed"],
+            font: "Inter",
+            colors: ["#a0e9ff", "#8b5cf6"],
+            hub: { website: "Deploy a custom Synaptic Interface.", growth: "Target high-velocity markets." },
+            insights: "Use the Intelligence Panel to track real-time commands."
+        };
 
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ website: state.dna.website })
-        });
-
-        if (!response.ok) throw new Error('Analysis failed');
-        const data = await response.json();
-        state.dna = data;
-
-        // Total duration target: ~20 seconds
         const totalDuration = 20000;
         const elapsed = Date.now() - startTime;
         const remaining = Math.max(0, totalDuration - elapsed);
@@ -131,9 +135,12 @@ async function performServerAnalysis() {
             clearInterval(interval);
             showStep(4);
         }, remaining);
+
     } catch (err) {
         clearInterval(interval);
-        alert("Server analysis failed. Please ensure the backend is running.");
+        showStep(2);
+    }
+
         showStep(2);
     }
 }
