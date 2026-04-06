@@ -54,11 +54,17 @@
             </div>
         </div>
 
-        <!-- Hero Section -->
+        <!-- Hero Section (Minimalist Pomelli) -->
         <section id="hero" class="hero"
             style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; padding: 100px 20px;">
 
-            <!-- Floating Assets -->
+            <!-- Floating Text Keywords -->
+            <div class="floating-text" style="top: 20%; left: 15%; animation-delay: 0s;">Synthesize</div>
+            <div class="floating-text" style="top: 35%; right: 20%; animation-delay: -2s;">Manifest</div>
+            <div class="floating-text" style="bottom: 25%; left: 25%; animation-delay: -4s;">Global Intelligence</div>
+            <div class="floating-text" style="bottom: 40%; right: 15%; animation-delay: -6s;">Brand DNA</div>
+
+            <!-- Scattered Organic SVG Assets (Replacement for broken images) -->
             <div class="hero-asset asset-top-left"
                 style="animation-delay: 0s; background: rgba(160, 233, 255, 0.05); border: 1px solid var(--primary-color);">
                 <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +79,88 @@
                         opacity="0.3" />
                 </svg>
             </div>
+            <div class="hero-asset asset-top-right" style="animation-delay: 1s; padding: 20px;">
+                <div style="font-size: 0.6rem; color: var(--text-secondary); margin-bottom: 8px;">MARKET VELOCITY</div>
+                <svg width="100%" height="60" viewBox="0 0 200 60">
+                    <path d="M0 50 Q50 40 80 45 T150 10 T200 30" stroke="var(--accent-purple)" fill="none"
+                        stroke-width="2" />
+                    <circle cx="150" cy="10" r="4" fill="var(--accent-purple)">
+                        <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+            </div>
+            <div class="hero-asset asset-mid-left"
+                style="animation-delay: 2s; background: var(--glass-bg); display: flex; align-items: center; justify-content: center; padding: 20px;">
+                <div style="text-align: left;">
+                    <div style="font-size: 0.6rem; color: var(--primary-color); margin-bottom: 4px;">DNA CALIBRATION
+                    </div>
+                    <div style="display: flex; gap: 4px;">
+                        <div style="width: 12px; height: 12px; border-radius: 50%; background: #1c2601;"></div>
+                        <div style="width: 12px; height: 12px; border-radius: 50%; background: #d0e19a;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-asset asset-mid-right"
+                style="animation-delay: 0.5s; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.02);">
+                <svg width="80" height="80" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="rgba(255,255,255,0.1)" fill="none" />
+                    <circle cx="50" cy="50" r="2" fill="white" />
+                    <path d="M50 10 A40 40 0 0 1 90 50" stroke="var(--primary-color)" stroke-width="3" fill="none" />
+                </svg>
+            </div>
+            <div class="hero-asset asset-bottom-left"
+                style="animation-delay: 1.5s; display: flex; flex-direction: column; justify-content: center; padding: 15px;">
+                <div style="height: 4px; width: 30%; background: var(--primary-color); margin-bottom: 6px;"></div>
+                <div style="height: 4px; width: 60%; background: rgba(255,255,255,0.1); margin-bottom: 6px;"></div>
+                <div style="height: 4px; width: 45%; background: rgba(255,255,255,0.1);"></div>
+            </div>
+            <div class="hero-asset asset-bottom-right"
+                style="animation-delay: 2.5s; border: 1px solid rgba(255,255,255,0.1); overflow: hidden;">
+                <div style="background: rgba(255,255,255,0.05); height: 12px; display: flex; gap: 4px; padding: 4px;">
+                    <div style="width: 4px; height: 4px; border-radius: 50%; background: #ff5f56;"></div>
+                    <div style="width: 4px; height: 4px; border-radius: 50%; background: #ffbd2e;"></div>
+                    <div style="width: 4px; height: 4px; border-radius: 50%; background: #27c93f;"></div>
+                </div>
+                <div style="padding: 10px;">
+                    <div style="font-size: 0.5rem; color: var(--primary-color); font-family: monospace;">> EXECUTING
+                        SYNTHESIS_</div>
+                </div>
+            </div>
 
+            <!-- Professional SVG Diagrams -->
+            <div class="diagram-asset market-pulse">
+                <svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 40Q40 10 70 40T130 40T190 20T230 45" stroke="var(--primary-color)" stroke-width="2"
+                        stroke-dasharray="4 4" opacity="0.6" />
+                    <circle cx="70" cy="40" r="4" fill="var(--primary-color)" />
+                    <circle cx="130" cy="40" r="3" fill="var(--accent-purple)" />
+                    <circle cx="190" cy="20" r="4" fill="var(--primary-color)" />
+                </svg>
+            </div>
+
+            <div class="diagram-asset node-cluster">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="30" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                    <circle cx="50" cy="20" r="5" fill="var(--primary-color)" />
+                    <circle cx="80" cy="50" r="4" fill="var(--accent-purple)" />
+                    <circle cx="50" cy="80" r="5" fill="var(--primary-color)" />
+                    <circle cx="20" cy="50" r="4" fill="var(--accent-purple)" />
+                    <line x1="50" y1="20" x2="80" y2="50" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+                    <line x1="80" y1="50" x2="50" y2="80" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+                    <line x1="50" y1="80" x2="20" y2="50" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+                    <line x1="20" y1="50" x2="50" y2="20" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+                </svg>
+            </div>
+
+            <div class="dna-helix">
+                <div class="dna-dot" style="animation-delay: 0s;"></div>
+                <div class="dna-dot" style="animation-delay: 0.2s;"></div>
+                <div class="dna-dot" style="animation-delay: 0.4s;"></div>
+                <div class="dna-dot" style="animation-delay: 0.6s;"></div>
+                <div class="dna-dot" style="animation-delay: 0.8s;"></div>
+            </div>
+
+            <!-- Central Content -->
             <div style="position: relative; z-index: 10;">
                 <h1
                     style="font-size: clamp(4.5rem, 12vw, 8.5rem); margin-bottom: 24px; font-style: italic; letter-spacing: -0.04em;">
@@ -87,45 +174,1469 @@
             </div>
         </section>
 
+        <!-- Extra content container (Now Restored for Completeness) -->
+        <div id="extraLandingContent">
+            <!-- Problem Section -->
+            <section id="problem" class="problem-section"
+                style="padding: 120px 20px; text-align: center; background: var(--bg-color);">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <h2
+                        style="font-size: clamp(2.5rem, 5vw, 4rem); font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; margin-bottom: 32px;">
+                        Marketing is broken by borders.</h2>
+                    <p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6; opacity: 0.8;">
+                        Traditional agencies are slow. Standard AI lacks cultural nuance. Prometra merges deep brand
+                        identity with real-time global trends to create content that resonates everywhere.</p>
+                </div>
+            </section>
+
+            <!-- Features Grid -->
+            <section id="features" style="padding: 100px 20px; background: var(--bg-color); position: relative;">
+                <div class="micro-float" style="top: 10%; left: 5%; animation-delay: 0s;">✦</div>
+                <div class="micro-float" style="top: 40%; right: 5%; animation-delay: -2s;">✧</div>
+                <div class="micro-float" style="bottom: 10%; left: 15%; animation-delay: -4s;">✨</div>
+
+                <div class="welcome-grid" style="max-width: 1200px; margin: 0 auto;">
+                    <div class="welcome-card glass" style="padding: 60px 32px; border-radius: 40px;">
+                        <div class="icon-circle" style="background: #a1c8c0; width: 60px; height: 60px;">⚡</div>
+                        <h4 style="font-size: 1.5rem; margin-top: 24px;">35-50% Faster</h4>
+                        <p>Accelerate your production cycle with AI that understands your brand dna better than any
+                            agency.</p>
+                    </div>
+                    <div class="welcome-card glass" style="padding: 60px 32px; border-radius: 40px;">
+                        <div class="icon-circle" style="background: #d0e19a; width: 60px; height: 60px;">🌍</div>
+                        <h4 style="font-size: 1.5rem; margin-top: 24px;">200+ Countries</h4>
+                        <p>Deploy globally with confidence. Our engine maps cultural nuances and local sentiments
+                            automatically.</p>
+                    </div>
+                    <div class="welcome-card glass" style="padding: 60px 32px; border-radius: 40px;">
+                        <div class="icon-circle" style="background: #d4d9b4; width: 60px; height: 60px;">🔒</div>
+                        <h4 style="font-size: 1.5rem; margin-top: 24px;">Enterprise-Grade</h4>
+                        <p>Fully compliant, secure, and built for scale. Prometra fits seamlessly into global marketing
+                            workflows.</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer
+                style="padding: 80px 40px; text-align: center; font-size: 0.85rem; color: var(--text-secondary); border-top: 1px solid var(--glass-border); background: var(--bg-color);">
+                <div
+                    style="font-family: 'Fraunces', serif; font-size: 1.5rem; font-style: italic; margin-bottom: 12px; color: white;">
+                    Prometra</div>
+                © 2026 Prometra Labs. Building the future of global marketing intelligence.
+            </footer>
+        </div>
     </div>
 
-    <!-- Onboarding Section -->
+    <!-- Onboarding Section (Revised Pomelli Flow) -->
     <section id="onboardingSection" class="onboarding-container hidden">
+        <div class="onboarding-header-glow"></div>
+
+        <!-- Back Button for Step 1 (Placed here to avoid animation transform jumping) -->
+        <button id="step1BackBtn" class="btn-back" onclick="exitOnboarding()"
+            style="position: fixed; top: 24px; left: 24px; z-index: 5000;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Back
+        </button>
+
+        <!-- Top-Right Menu & Account -->
+        <div class="top-right-icons">
+            <button class="icon-btn" id="menuDotsBtn" onclick="toggleTopMenu()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <circle cx="12" cy="5" r="2" />
+                    <circle cx="12" cy="12" r="2" />
+                    <circle cx="12" cy="19" r="2" />
+                </svg>
+            </button>
+            <button class="icon-btn profile-avatar" id="profileAvatarBtn" onclick="toggleProfileMenu()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 20c0-4 4-7 8-7s8 3 8 7" />
+                </svg>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div id="topMenuDropdown" class="top-dropdown hidden">
+                <a href="#" onclick="event.preventDefault()">Settings</a>
+                <a href="#" onclick="event.preventDefault()">Help & Feedback</a>
+                <a href="#" onclick="event.preventDefault()">About Prometra</a>
+            </div>
+
+            <!-- Profile Dropdown -->
+            <div id="profileDropdown" class="top-dropdown profile-dropdown hidden">
+                <div style="padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: center;">
+                    <div class="profile-avatar-large">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 20c0-4 4-7 8-7s8 3 8 7" />
+                        </svg>
+                    </div>
+                    <div style="font-weight: 600; margin-top: 8px;">User</div>
+                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Prometra Free Tier</div>
+                </div>
+                <a href="#" onclick="event.preventDefault()">Manage Account</a>
+                <a href="#" onclick="event.preventDefault()">Sign Out</a>
+            </div>
+        </div>
+
+        <!-- Blueprint Back Confirmation Modal (Step 4 only) -->
+        <div id="confirmBlueprintModal" class="modal-overlay hidden">
+            <div class="modal-card glass">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffbd2e" stroke-width="2"
+                    style="margin-bottom: 20px;">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="8" x2="12" y2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+                <h3 style="margin-bottom: 8px;">Are you sure you want to go back?</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 32px;">This will clear all
+                    your progress.</p>
+                <div style="display: flex; gap: 12px; width: 100%;">
+                    <button class="btn btn-outline" style="flex: 1;" onclick="closeBlueprintModal()">Cancel</button>
+                    <button class="btn" style="flex: 1; background: #ff5f56; color: white;"
+                        onclick="confirmBlueprintBack()">Yes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Confirmation Modal (Step 3 Abort) -->
+        <div id="confirmBackModal" class="modal-overlay hidden">
+            <div class="modal-card glass">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffbd2e" stroke-width="2"
+                    style="margin-bottom: 20px;">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="8" x2="12" y2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+                <h3 style="margin-bottom: 8px;">Are you sure you want to abort?</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 32px;">This will cancel the
+                    synthesis and clear your progress.</p>
+                <div style="display: flex; gap: 12px; width: 100%;">
+                    <button class="btn btn-outline" style="flex: 1;" onclick="closeModal()">Cancel</button>
+                    <button class="btn" style="flex: 1; background: #ff5f56; color: white;"
+                        onclick="confirmBack()">Yes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="onboarding-card" id="onboardingCard">
+            <!-- Step 1: Welcome -->
+            <div id="step1" class="onboarding-step" style="position: relative;">
+
+                <!-- Header — poetic/visionary -->
+                <div class="welcome-hero">
+                    <div class="welcome-hero-badge">✦ INTELLIGENCE ENGINE</div>
+                    <h1 class="welcome-hero-title">The machine<br>already knows<br><em>your brand.</em></h1>
+                    <p class="welcome-hero-sub">Three neural passes. One living blueprint.<br>Zero guesswork.</p>
+                </div>
+
+                <!-- Vertical Timeline -->
+                <div class="welcome-timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-num">01</span>
+                        </div>
+                        <div class="timeline-card timeline-card-wide">
+                            <div class="timeline-card-icon"
+                                style="background: var(--primary-color); color: var(--bg-color);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round">
+                                    <path
+                                        d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Decode the Signal</h3>
+                                <p>We read your site's visual genome — colors, typography, spatial rhythm — and distill
+                                    a living essence.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"
+                                style="background: var(--accent-purple); box-shadow: 0 0 12px var(--accent-purple);">
+                            </div>
+                            <span class="timeline-num">02</span>
+                        </div>
+                        <div class="timeline-card timeline-card-narrow">
+                            <div class="timeline-card-icon"
+                                style="background: var(--accent-purple); color: var(--bg-color);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round">
+                                    <path d="m3 11 18-5v12l-18-5Z" />
+                                    <path d="M11.6 16.8a3 3 0 1 1-5.8-.8" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Proliferate Ideas</h3>
+                                <p>Infinite campaign threads spun from your core identity — each one unique, each one
+                                    on-brand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"
+                                style="background: #fff; box-shadow: 0 0 12px rgba(255,255,255,0.5);"></div>
+                            <span class="timeline-num">03</span>
+                        </div>
+                        <div class="timeline-card timeline-card-mid">
+                            <div class="timeline-card-icon" style="background: #fff; color: var(--bg-color);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round">
+                                    <path d="m12 3 2.5 5.5 5.5 2.5-5.5 2.5-2.5 5.5-2.5-5.5-5.5-2.5 5.5-2.5Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Crystallize Output</h3>
+                                <p>Production-ready creatives materialize — calibrated for every market, every channel,
+                                    every moment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA — bottom right, floating style -->
+                <div class="welcome-cta-container">
+                    <button class="welcome-cta-btn" onclick="showStep(2)">
+                        Begin Synthesis
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: Website Entry — Redesigned -->
+            <div id="step2" class="onboarding-step hidden" style="position: relative; overflow: hidden;">
+
+                <!-- Animated scan lines background -->
+                <div class="scan-lines-bg">
+                    <div class="scan-line scan-line-1"></div>
+                    <div class="scan-line scan-line-2"></div>
+                    <div class="scan-line scan-line-3"></div>
+                </div>
+
+                <!-- Side gradient accent -->
+                <div class="side-gradient-left"></div>
+
+                <button class="btn-back" onclick="showStep(1)" style="position: relative; z-index: 2;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back
+                </button>
+
+                <div class="step2-content" style="position: relative; z-index: 2;">
+                    <div class="step2-header">
+                        <div class="step2-badge">⎔ SIGNAL ACQUISITION</div>
+                        <h1 class="step2-title">Scan your<br><em>Digital Identity</em></h1>
+                        <p class="step2-sub">Drop your URL below. Our neural engine will decode your brand's visual
+                            genome and construct a <strong>Growth Blueprint</strong> — a living strategy map built from
+                            your market signals.</p>
+                    </div>
+
+                    <div class="step2-input-group">
+                        <div class="step2-input-label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M2 12h20" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                            <span>Target URL</span>
+                        </div>
+                        <input type="text" id="websiteInput" class="glass step2-input" placeholder="www.yourbrand.com">
+                    </div>
+
+                    <button class="step2-cta" onclick="saveWebsite()">
+                        Initialize Scan
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 3: Generating DNA (Loading) - Pomelli Redesign -->
+            <div id="step3" class="onboarding-step hidden" style="position: relative;">
+                <!-- Animated Side Glow (Replacing vibrating-glow) -->
+                <div class="side-gradient-left" style="opacity: 0.8; mix-blend-mode: screen; width: 50%; left: -10%;">
+                </div>
+
+                <div class="analysis-card"
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; position: relative; z-index: 2;">
+
+                    <button class="btn-back" onclick="prevStep()"
+                        style="position: absolute; top: 0; left: 0; border-color: rgba(255,255,255,0.2);">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7" />
+                        </svg>
+                        Stop Modeling
+                    </button>
+
+                    <!-- Pipeline Indicator -->
+                    <div class="pipeline-indicator">
+                        <span class="pipeline-step active">
+                            <span class="pipeline-dot"></span>Discover
+                        </span>
+                        <span class="pipeline-divider">→</span>
+                        <span class="pipeline-step">
+                            <span class="pipeline-dot"></span>Model
+                        </span>
+                        <span class="pipeline-divider">→</span>
+                        <span class="pipeline-step">
+                            <span class="pipeline-dot"></span>Plan
+                        </span>
+                        <span class="pipeline-divider">→</span>
+                        <span class="pipeline-step">
+                            <span class="pipeline-dot"></span>Deploy
+                        </span>
+                    </div>
+
+                    <h1
+                        style="font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; margin-bottom: 12px; font-size: 2.2rem;">
+                        Market Modeling Session</h1>
+                    <p style="color: var(--primary-color); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 32px;"
+                        id="dnaStepLabel">Stage 1: Signal Discovery</p>
+
+                    <div class="status-box" id="analysisStatusBox"
+                        style="transition: background 0.5s ease, color 0.5s ease;">
+                        <span style="font-size: 1.2rem;">✨</span>
+                        <span id="analysisStatus">Mapping Brand Signals...</span>
+                    </div>
+
+                    <!-- Brand Map Visualization (Replacing Website Screenshot) -->
+                    <div class="content-preview-card brand-map-container">
+                        <div class="brand-map-bg"></div>
+                        <svg width="100%" height="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg"
+                            class="brand-map-svg">
+                            <!-- Connecting Lines -->
+                            <g class="brand-map-lines" stroke="rgba(160, 233, 255, 0.2)" stroke-width="1.5">
+                                <line x1="200" y1="120" x2="120" y2="60" class="pulse-line pulse-delay-1" />
+                                <line x1="200" y1="120" x2="280" y2="70" class="pulse-line pulse-delay-2" />
+                                <line x1="200" y1="120" x2="310" y2="160" class="pulse-line pulse-delay-3" />
+                                <line x1="200" y1="120" x2="140" y2="180" class="pulse-line pulse-delay-4" />
+                                <line x1="120" y1="60" x2="80" y2="110" class="pulse-line pulse-delay-5" />
+                                <line x1="280" y1="70" x2="340" y2="90" class="pulse-line pulse-delay-6" />
+                            </g>
+
+                            <!-- Nodes -->
+                            <g class="brand-map-nodes">
+                                <!-- Peripheral Nodes -->
+                                <circle cx="120" cy="60" r="4" fill="var(--accent-purple)" class="node-pulse" />
+                                <circle cx="280" cy="70" r="5" fill="#fff" class="node-pulse" />
+                                <circle cx="310" cy="160" r="3.5" fill="var(--primary-color)" class="node-pulse" />
+                                <circle cx="140" cy="180" r="4.5" fill="#fff" class="node-pulse" />
+                                <circle cx="80" cy="110" r="3" fill="var(--primary-color)" class="node-pulse" />
+                                <circle cx="340" cy="90" r="3" fill="var(--accent-purple)" class="node-pulse" />
+
+                                <!-- Central Core Node -->
+                                <circle cx="200" cy="120" r="8" fill="var(--primary-color)" class="core-node-pulse" />
+                                <circle cx="200" cy="120" r="14" fill="none" stroke="var(--primary-color)"
+                                    stroke-width="1" class="core-ring-1" />
+                                <circle cx="200" cy="120" r="22" fill="none" stroke="var(--primary-color)"
+                                    stroke-width="0.5" stroke-dasharray="4 4" class="core-ring-2" />
+                            </g>
+                        </svg>
+
+                        <!-- Live Text Overlay -->
+                        <div class="brand-map-overlay-text">
+                            <div class="status-indicator">GENERATING_BRAND_NETWORK...</div>
+                        </div>
+                    </div>
+
+                    <div class="url-box">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg>
+                        <span id="analysisWebsiteLink">https://prometra.ai</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Identity Synthesis Result -->
+            <div id="step4" class="onboarding-step hidden dna-snapshot">
+                <button class="btn-back" onclick="openBlueprintBackModal()">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to Entry
+                </button>
+                <div class="dna-header" style="text-align: center; border: none; margin-bottom: 48px;">
+                    <div id="dnaFaviconContainer" style="margin-bottom: 16px; display: none;">
+                        <img id="dnaHeaderFavicon" src="" style="width: 40px; height: 40px; border-radius: 8px;">
+                    </div>
+                    <h1
+                        style="font-weight: 400; font-size: 2.2rem; margin-bottom: 8px; display: flex; align-items: center; justify-content: center; gap: 12px;">
+                        Strategy Model
+                    </h1>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; max-width: 500px; margin: 0 auto;">
+                        Systemic modelling of growth architecture, competitive density, and execution logic.</p>
+                </div>
+
+                <div class="dna-grid">
+                    <!-- Profile Card -->
+                    <div class="dna-card card-profile">
+                        <div class="logo-thumb" id="dnaLogoThumb">
+                            <img id="brandLogoImg" src="assets/market-pulse.svg">
+                        </div>
+                        <div>
+                            <h2 id="dnaBrandName" style="font-size: 2.4rem; margin-bottom: 2px; font-weight: 500;">
+                                Persona AI</h2>
+                            <div
+                                style="font-size: 0.8rem; color: var(--primary-color); opacity: 0.8; margin-bottom: 8px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase;">
+                                Persona AI is a strategy intelligence system that transforms complexity into structured
+                                execution.</div>
+                            <div
+                                style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary); font-size: 0.9rem;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
+                                <span id="dnaWebsiteLink">https://personai.fun/</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Images Card -->
+                    <div class="dna-card card-images">
+                        <div class="dna-section-label">Images</div>
+                        <div class="image-gallery">
+                            <div class="gallery-item upload-button">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                    <polyline points="17 8 12 3 7 8" />
+                                    <line x1="12" y1="3" x2="12" y2="15" />
+                                </svg>
+                                <div style="font-size: 0.7rem; margin-top: 8px;">Upload Images</div>
+                            </div>
+                            <div class="gallery-item"><img src="assets/market-pulse.svg"></div>
+                            <div class="gallery-item"><img src="assets/node-cluster.svg"></div>
+                            <div class="gallery-item"><img src="assets/market-pulse.svg"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tagline Card -->
+                    <div class="dna-card card-tagline">
+                        <div class="dna-section-label">Tagline</div>
+                        <div class="edit-icon" onclick="openEditModal('tagline')">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                            </svg>
+                        </div>
+                        <p id="dnaTagline"
+                            style="font-family: 'Fraunces', serif; font-size: 1.8rem; font-style: italic; color: var(--primary-color); line-height: 1.3;">
+                            From intelligence to execution.</p>
+                    </div>
+
+                    <!-- Values Card -->
+                    <div class="dna-card card-values">
+                        <div class="dna-section-label">System Principles</div>
+                        <div class="edit-icon" onclick="openEditModal('values')">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                            </svg>
+                        </div>
+                        <div class="dna-tag-list" id="dnaValues" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <!-- Injected -->
+                        </div>
+                    </div>
+
+                    <!-- Aesthetic Card -->
+                    <div class="dna-card card-aesthetic">
+                        <div class="dna-section-label">Interface Style</div>
+                        <div class="edit-icon" onclick="openEditModal('aesthetic')">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                            </svg>
+                        </div>
+                        <div id="dnaAesthetic" style="font-size: 1.1rem; color: #fff;">dark-mode minimalism</div>
+                    </div>
+
+                    <!-- Tone Card -->
+                    <div class="dna-card card-tone">
+                        <div class="dna-section-label">System Voice</div>
+                        <div class="edit-icon" onclick="openEditModal('tone')">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                            </svg>
+                        </div>
+                        <div id="dnaTone" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <!-- Injected -->
+                        </div>
+                    </div>
+
+                    <!-- Fonts Card -->
+                    <div class="dna-card card-fonts">
+                        <div class="dna-section-label">System Typefaces</div>
+                        <div class="edit-icon" onclick="openEditModal('fonts')">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                            </svg>
+                        </div>
+                        <div style="display: flex; gap: 32px; align-items: flex-end;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2.2rem; color: var(--primary-color); margin-bottom: 4px;">Aa
+                                </div>
+                                <div id="dnaFont1" style="font-size: 0.7rem; color: var(--text-secondary);">Clash
+                                    Display</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2.2rem; color: var(--primary-color); margin-bottom: 4px;">Aa
+                                </div>
+                                <div id="dnaFont2" style="font-size: 0.7rem; color: var(--text-secondary);">Cabinet
+                                    Grotesk</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Strategic Overview Card -->
+                    <div class="dna-card card-overview">
+                        <div class="dna-section-label">System Overview</div>
+                        <div id="dnaOverview"
+                            style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); height: 180px; overflow-y: auto;">
+                            Restoring market intelligence...
+                        </div>
+                    </div>
+
+                    <!-- Strategic Insights Card -->
+                    <div class="dna-card card-insights">
+                        <div class="dna-section-label">Execution Insights</div>
+                        <div id="dnaSuggestions"
+                            style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                            Identifying growth levers...
+                        </div>
+                    </div>
+
+                    <!-- Growth & Website Hub Card -->
+                    <div class="dna-card card-hub">
+                        <div class="dna-section-label">Execution Layer</div>
+                        <div id="hubSuggestions"
+                            style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                            <div
+                                style="color: var(--primary-color); font-weight: 700; margin-bottom: 8px; text-transform: uppercase; font-size: 0.7rem;">
+                                Execution Layer</div>
+                            <div id="websiteSuggestions" style="margin-bottom: 12px; opacity: 0.9;">-</div>
+                            <div
+                                style="color: var(--accent-purple); font-weight: 700; margin-bottom: 8px; text-transform: uppercase; font-size: 0.7rem;">
+                                Growth Systems</div>
+                            <div id="marketSuggestions" style="opacity: 0.9;">-</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    style="margin-top: 40px; border-top: 1px solid var(--glass-border); padding-top: 32px; display: flex; align-items: center; justify-content: space-between; position: relative;">
+                    <button class="btn btn-secondary" style="padding: 12px 24px;" onclick="prevStep()">Back</button>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Identity confirmed. Ready to manifest
+                        your global campaign.</p>
+                    <button class="btn btn-primary" style="padding: 16px 40px;" onclick="startApp()">Looks
+                        good!</button>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Dashboard Section (3-Zone) -->
+    <!-- Dashboard Section -->
     <main id="appSection" class="app-container hidden">
         <aside class="sidebar glass">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="brand" style="color: var(--primary-color); font-weight: 800;">PROMETRA</div>
+            </div>
+
+            <!-- Business DNA Sidebar Section -->
+            <div id="dnaSidebarContent" class="glass"
+                style="margin-top: 1.5rem; padding: 16px; border-width: 0 0 1px 0; border-radius: 0;">
+                <!-- Injected via main.js -->
+            </div>
+
+            <!-- Sidebar Navigation -->
+            <div style="padding: 0 16px; margin-top: 1.5rem;">
+                <div style="font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; font-weight: 700; opacity: 0.6;">Modules</div>
+                <nav style="display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.5rem;">
+                    <button id="navConsoleBtn" class="btn btn-outline" style="justify-content: flex-start; border: none; background: var(--glass-bg);" onclick="showDashboardView('console')">Console</button>
+                    <button id="navCampaignBtn" class="btn btn-outline" style="justify-content: flex-start; border: none;" onclick="showDashboardView('campaign')">Campaign Builder</button>
+                    <button id="navSimBtn" class="btn btn-outline" style="justify-content: flex-start; border: none;" onclick="showDashboardView('simulation')">Simulation</button>
+                    <button id="navAnalyticsBtn" class="btn btn-outline" style="justify-content: flex-start; border: none;" onclick="showDashboardView('analytics')">Analytics</button>
+                    <button id="navStrategyBtn" class="btn btn-outline" style="justify-content: flex-start; border: none;" onclick="showDashboardView('strategy')">Strategy Model</button>
+                </nav>
+            </div>
+
         </aside>
-        
+
         <div class="top-strategy-bar">
+            <div style="display: flex; align-items: center; gap: 24px;">
+                <div
+                    style="font-size: 0.7rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 2px; font-weight: 700;">
+                    Operational Mode: Strategic Synthesis</div>
+                <div class="glass"
+                    style="padding: 4px 12px; border-radius: 4px; font-size: 0.7rem; color: var(--text-secondary); border: 1px solid var(--glass-border);">
+                    v2.4.0-Pro</div>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <div class="glass"
+                    style="padding: 6px 14px; border-radius: 20px; font-size: 0.7rem; letter-spacing: 0.3px;">Sandbox
+                    Mode</div>
+                <div class="glass"
+                    style="padding: 6px 14px; border-radius: 20px; font-size: 0.7rem; color: var(--primary-color); letter-spacing: 0.3px;">
+                    Verified Professional</div>
+
+                <div style="width: 1px; height: 16px; background: rgba(255,255,255,0.1); margin: 0 4px;"></div>
+
+                <button class="icon-btn" onclick="toggleTopMenuDash()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="5" r="2" />
+                        <circle cx="12" cy="12" r="2" />
+                        <circle cx="12" cy="19" r="2" />
+                    </svg>
+                </button>
+                <button class="icon-btn profile-avatar" onclick="toggleProfileMenuDash()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 20c0-4 4-7 8-7s8 3 8 7" />
+                    </svg>
+                </button>
+
+                <div style="position: relative;">
+                    <div id="topMenuDropdownDash" class="top-dropdown hidden"
+                        style="position: absolute; top: 32px; right: 0; z-index: 1000;">
+                        <a href="#" onclick="event.preventDefault()">Settings</a>
+                        <a href="#" onclick="event.preventDefault()">Help & Feedback</a>
+                        <a href="#" onclick="event.preventDefault()">About Prometra</a>
+                    </div>
+                    <div id="profileDropdownDash" class="top-dropdown profile-dropdown hidden"
+                        style="position: absolute; top: 32px; right: 0; z-index: 1000;">
+                        <div
+                            style="padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: center;">
+                            <div class="profile-avatar-large">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="8" r="4" />
+                                    <path d="M4 20c0-4 4-7 8-7s8 3 8 7" />
+                                </svg>
+                            </div>
+                            <div style="font-weight: 600; margin-top: 8px;">User</div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">Prometra Free Tier</div>
+                        </div>
+                        <a href="#" onclick="event.preventDefault()">Manage Account</a>
+                        <a href="#" onclick="event.preventDefault()">Sign Out</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <section class="main-content">
             <div class="main-content-inner">
-            </div>
+                <header
+                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; width: 100%;">
+                    <div style="display: flex; align-items: center; gap: 24px;">
+                        <h2>Strategy Console</h2>
+                    </div>
+                </header>
+
+                <!-- Views Container -->
+                <div style="width: 100%;">
+                    <!-- Console View -->
+                    <div id="consoleView">
+                        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+                            <div class="glass" style="padding: 2.5rem; border-radius: 20px;">
+                                <h3 style="margin-bottom: 1.5rem; font-family: 'Fraunces', serif; font-style: italic;">
+                                    Operational Overview</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">Welcome
+                                    to the
+                                    Strategy Console. Your brand intelligence is currently being modeled across 14
+                                    global
+                                    vectors. Select a module from the sidebar to begin execution.</p>
+
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                                    <div
+                                        style="padding: 20px; background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: 12px;">
+                                        <div
+                                            style="font-size: 0.7rem; color: var(--primary-color); text-transform: uppercase; margin-bottom: 8px;">
+                                            Active Strategies</div>
+                                        <div style="font-size: 1.8rem; font-weight: 700;">12</div>
+                                    </div>
+                                    <div
+                                        style="padding: 20px; background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: 12px;">
+                                        <div
+                                            style="font-size: 0.7rem; color: var(--primary-color); text-transform: uppercase; margin-bottom: 8px;">
+                                            Market Coverage</div>
+                                        <div style="font-size: 1.8rem; font-weight: 700;">84%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="glass" style="padding: 2rem; border-radius: 20px;">
+                                <h4
+                                    style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem; opacity: 0.7;">
+                                    System Health</h4>
+                                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                                    <div>
+                                        <div
+                                            style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 6px;">
+                                            <span>Intelligence Sync</span>
+                                            <span style="color: var(--primary-color);">98%</span>
+                                        </div>
+                                        <div
+                                            style="height: 4px; background: rgba(255,255,255,0.05); border-radius: 2px; overflow: hidden;">
+                                            <div style="width: 98%; height: 100%; background: var(--primary-color);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div
+                                            style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 6px;">
+                                            <span>Vector Accuracy</span>
+                                            <span style="color: var(--neon-blue);">94%</span>
+                                        </div>
+                                        <div
+                                            style="height: 4px; background: rgba(255,255,255,0.05); border-radius: 2px; overflow: hidden;">
+                                            <div style="width: 94%; height: 100%; background: var(--neon-blue);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Campaign Builder View -->
+                    <div id="campaignView" class="hidden">
+                        <div class="generator-card glass" style="position: relative; overflow: hidden;">
+                            <!-- Signature Visual Motif: Animated Gradient Line -->
+                            <div class="signature-gradient-line"></div>
+
+                            <h3 style="margin-bottom: 1.5rem;">Campaign Architect</h3>
+                            <div class="input-group" style="margin-bottom: 2rem;">
+                                <label
+                                    style="display: block; font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Strategic
+                                    Brief</label>
+                                <textarea id="promptInput" class="glass"
+                                    style="width: 100%; height: 120px; padding: 1.5rem; color: white; border-radius: 12px; resize: none; border: 1px solid var(--glass-border);"
+                                    placeholder="e.g. Launching a premium skincare line for Gen Z in Japan..."></textarea>
+                            </div>
+
+                            <!-- Strategy Modes -->
+                            <div style="margin-bottom: 2rem;">
+                                <label
+                                    style="display: block; font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.8rem;">Strategy
+                                    Mode</label>
+                                <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="strategyModesContainer">
+                                    <button class="btn btn-outline mode-btn active"
+                                        onclick="selectStrategyMode(this, 'Awareness')"
+                                        style="padding: 8px 16px; font-size: 0.75rem; border-radius: 20px; border-color: var(--primary-color); color: var(--primary-color);">Awareness</button>
+                                    <button class="btn btn-outline mode-btn"
+                                        onclick="selectStrategyMode(this, 'Conversion')"
+                                        style="padding: 8px 16px; font-size: 0.75rem; border-radius: 20px;">Conversion</button>
+                                    <button class="btn btn-outline mode-btn"
+                                        onclick="selectStrategyMode(this, 'Domination')"
+                                        style="padding: 8px 16px; font-size: 0.75rem; border-radius: 20px;">Market
+                                        Domination</button>
+                                    <button class="btn btn-outline mode-btn"
+                                        onclick="selectStrategyMode(this, 'Launch')"
+                                        style="padding: 8px 16px; font-size: 0.75rem; border-radius: 20px;">Product
+                                        Launch</button>
+                                    <button class="btn btn-outline mode-btn"
+                                        onclick="selectStrategyMode(this, 'Repositioning')"
+                                        style="padding: 8px 16px; font-size: 0.75rem; border-radius: 20px;">Repositioning</button>
+                                </div>
+                                <input type="hidden" id="selectedStrategyMode" value="Awareness">
+                            </div>
+
+                            <!-- Advanced Campaign Input Panel -->
+                            <div style="margin-bottom: 1.5rem;">
+                                <label
+                                    style="display: block; font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Strategic
+                                    Inputs</label>
+
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                    <!-- Row 1 -->
+                                    <div>
+                                        <label
+                                            style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.4rem;">Budget
+                                            Range</label>
+                                        <select id="budgetInput" class="btn btn-outline"
+                                            style="width: 100%; padding: 10px; font-size: 0.8rem; text-align: left;">
+                                            <option value="1k-10k">$1k - $10k (Pilot)</option>
+                                            <option value="10k-50k">$10k - $50k (Growth)</option>
+                                            <option value="50k-plus">$50k+ (Scale)</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label
+                                            style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.4rem;">Competitive
+                                            Intensity</label>
+                                        <select id="intensityInput" class="btn btn-outline"
+                                            style="width: 100%; padding: 10px; font-size: 0.8rem; text-align: left;">
+                                            <option value="low">Low (Blue Ocean)</option>
+                                            <option value="medium">Medium (Established)</option>
+                                            <option value="high">High (Saturated)</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Row 2 -->
+                                    <div>
+                                        <label
+                                            style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.4rem;">Brand
+                                            Authority</label>
+                                        <select id="authorityInput" class="btn btn-outline"
+                                            style="width: 100%; padding: 10px; font-size: 0.8rem; text-align: left;">
+                                            <option value="emerging">Emerging Challenger</option>
+                                            <option value="established">Established Player</option>
+                                            <option value="dominant">Market Leader</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label
+                                            style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.4rem;">Risk
+                                            Appetite</label>
+                                        <select id="riskInput" class="btn btn-outline"
+                                            style="width: 100%; padding: 10px; font-size: 0.8rem; text-align: left;">
+                                            <option value="conservative">Conservative</option>
+                                            <option value="balanced" selected>Balanced</option>
+                                            <option value="aggressive">Aggressive (Disruptive)</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Row 3 -->
+                                    <div>
+                                        <label
+                                            style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.4rem;">Target
+                                            KPI</label>
+                                        <input type="text" id="kpiInput" class="glass"
+                                            style="width: 100%; padding: 10px; color: white; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); font-size: 0.8rem;"
+                                            placeholder="e.g. Target ROAS 3.5x">
+                                    </div>
+                                    <div>
+                                        <label
+                                            style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.4rem;">Time
+                                            Horizon</label>
+                                        <div class="glass"
+                                            style="padding: 2.5rem; border-radius: 24px; margin-bottom: 2rem; border: 1px solid rgba(0, 210, 255, 0.1);">
+                                            <div
+                                                style="font-size: 0.7rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px; font-weight: 700;">
+                                                Strategy Composer</div>
+
+                                            <div
+                                                style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;">
+                                                <div>
+                                                    <label
+                                                        style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase;">Strategic
+                                                        Objective</label>
+                                                    <select id="composerObjective" class="glass"
+                                                        style="width: 100%; padding: 12px; border-radius: 8px; background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); color: #fff;">
+                                                        <option value="market_expansion">Market Expansion</option>
+                                                        <option value="brand_repositioning">Brand Repositioning</option>
+                                                        <option value="product_launch">Product Launch</option>
+                                                        <option value="defensive_moat">Defensive Moat Construction
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label
+                                                        style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase;">Target
+                                                        Market</label>
+                                                    <input type="text" id="composerMarket" class="glass"
+                                                        placeholder="e.g. North American Enterprise SaaS"
+                                                        style="width: 100%; padding: 12px; border-radius: 8px; background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); color: #fff;">
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-bottom: 24px;">
+                                                <label
+                                                    style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase;">Campaign
+                                                    Angle</label>
+                                                <input type="text" id="composerAngle" class="glass"
+                                                    placeholder="e.g. Radical transparency in AI security"
+                                                    style="width: 100%; padding: 12px; border-radius: 8px; background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); color: #fff;">
+                                            </div>
+
+                                            <div style="margin-bottom: 32px;">
+                                                <label
+                                                    style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase;">Channel
+                                                    Focus</label>
+                                                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                                                    <label class="glass"
+                                                        style="padding: 8px 16px; border-radius: 20px; font-size: 0.75rem; cursor: pointer; display: flex; align-items: center; gap: 8px; border: 1px solid var(--glass-border);"><input
+                                                            type="checkbox" checked> LinkedIn Enterprise</label>
+                                                    <label class="glass"
+                                                        style="padding: 8px 16px; border-radius: 20px; font-size: 0.75rem; cursor: pointer; display: flex; align-items: center; gap: 8px; border: 1px solid var(--glass-border);"><input
+                                                            type="checkbox" checked> Industry Newsletters</label>
+                                                    <label class="glass"
+                                                        style="padding: 8px 16px; border-radius: 20px; font-size: 0.75rem; cursor: pointer; display: flex; align-items: center; gap: 8px; border: 1px solid var(--glass-border);"><input
+                                                            type="checkbox"> Performance Search</label>
+                                                </div>
+                                            </div>
+
+                                            <button id="generateBtn" class="btn btn-primary"
+                                                style="width: 100%; height: 54px; justify-content: center; background: var(--primary-color); color: #020817; font-weight: 700; border-radius: 8px; letter-spacing: 1px;"
+                                                onclick="generateStrategy()">GENERATE STRATEGIC BLUEPRINT</button>
+
+                                            <!-- Strategy Timeline -->
+                                            <div
+                                                style="margin-top: 40px; border-top: 1px solid var(--glass-border); padding-top: 24px;">
+                                                <div
+                                                    style="display: flex; justify-content: space-between; align-items: center; opacity: 0.5;">
+                                                    <div
+                                                        style="display: flex; align-items: center; gap: 8px; font-size: 0.65rem; color: var(--primary-color); font-weight: 700;">
+                                                        <span
+                                                            style="width: 8px; height: 8px; border-radius: 50%; background: var(--primary-color);"></span>
+                                                        Strategy Model
+                                                    </div>
+                                                    <div style="color: var(--text-secondary); font-size: 0.65rem;">→
+                                                    </div>
+                                                    <div
+                                                        style="display: flex; align-items: center; gap: 8px; font-size: 0.65rem; color: #fff; font-weight: 700;">
+                                                        <span
+                                                            style="width: 8px; height: 8px; border-radius: 50%; background: #fff;"></span>
+                                                        Campaign Design
+                                                    </div>
+                                                    <div style="color: var(--text-secondary); font-size: 0.65rem;">→
+                                                    </div>
+                                                    <div
+                                                        style="display: flex; align-items: center; gap: 8px; font-size: 0.65rem;">
+                                                        <span
+                                                            style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.2);"></span>
+                                                        Simulation
+                                                    </div>
+                                                    <div style="color: var(--text-secondary); font-size: 0.65rem;">→
+                                                    </div>
+                                                    <div
+                                                        style="display: flex; align-items: center; gap: 8px; font-size: 0.65rem;">
+                                                        <span
+                                                            style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.2);"></span>
+                                                        Execution
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Strategy Modules (Horizontal Panels) -->
+                                        <div id="outputContainer" class="hidden">
+                                            <div style="display: flex; flex-direction: column; gap: 20px;">
+                                                <div class="glass"
+                                                    style="padding: 2rem; border-radius: 12px; border-left: 4px solid var(--primary-color);">
+                                                    <div
+                                                        style="font-size: 0.7rem; color: var(--primary-color); text-transform: uppercase; margin-bottom: 12px; font-weight: 700;">
+                                                        Strategy Blueprint</div>
+                                                    <div id="blueprintText"
+                                                        style="font-size: 0.95rem; line-height: 1.7; color: #fff;">
+                                                    </div>
+                                                </div>
+
+                                                <div class="glass"
+                                                    style="padding: 2rem; border-radius: 12px; border-left: 4px solid var(--accent-purple);">
+                                                    <div
+                                                        style="font-size: 0.7rem; color: var(--accent-purple); text-transform: uppercase; margin-bottom: 12px; font-weight: 700;">
+                                                        Messaging Framework</div>
+                                                    <div id="messagingText"
+                                                        style="font-size: 0.95rem; line-height: 1.7; color: #fff;">
+                                                    </div>
+                                                </div>
+
+                                                <div class="glass"
+                                                    style="padding: 2rem; border-radius: 12px; border-left: 4px solid #f2994a;">
+                                                    <div
+                                                        style="font-size: 0.7rem; color: #f2994a; text-transform: uppercase; margin-bottom: 12px; font-weight: 700;">
+                                                        Channel Allocation</div>
+                                                    <div id="channelText"
+                                                        style="font-size: 0.95rem; line-height: 1.7; color: #fff;">
+                                                    </div>
+                                                </div>
+
+                                                <div class="glass"
+                                                    style="padding: 2rem; border-radius: 12px; border-left: 4px solid #27c93f;">
+                                                    <div
+                                                        style="font-size: 0.7rem; color: #27c93f; text-transform: uppercase; margin-bottom: 12px; font-weight: 700;">
+                                                        Execution Roadmap</div>
+                                                    <div id="roadmapText"
+                                                        style="font-size: 0.95rem; line-height: 1.7; color: #fff;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End .generator-card -->
+                    </div> <!-- End #campaignView -->
+
+                    <!-- Simulation View -->
+                    <div id="simulationView" class="hidden">
+                        <div style="display: grid; grid-template-columns: 350px 1fr; gap: 24px;">
+                            <!-- Left: Controls -->
+                            <div class="glass" style="padding: 24px; border-radius: 16px;">
+                                <div
+                                    style="font-size: 0.7rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; font-weight: 700;">
+                                    Scenario Builder</div>
+
+                                <div style="margin-bottom: 24px;">
+                                    <label
+                                        style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 8px;">SIMULATION
+                                        SCENARIO</label>
+                                    <select id="simScenario" class="glass"
+                                        style="width: 100%; padding: 12px; border-radius: 8px; background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); color: #fff;">
+                                        <option value="market_entry">Aggressive Market Entry</option>
+                                        <option value="defensive">Defensive Moat Pivot</option>
+                                        <option value="saturation">Extreme Market Saturation</option>
+                                        <option value="crisis">Black Swan Economic Shift</option>
+                                    </select>
+                                </div>
+
+                                <div style="margin-bottom: 24px;">
+                                    <label
+                                        style="display: block; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 12px;">MARKET
+                                        VARIABLES</label>
+                                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                                        <div>
+                                            <div
+                                                style="display: flex; justify-content: space-between; font-size: 0.7rem; margin-bottom: 6px;">
+                                                <span>Volatility Intensity</span>
+                                                <span id="volatilityVal">45%</span>
+                                            </div>
+                                            <input type="range" min="0" max="100" value="45" class="sim-range"
+                                                style="width: 100%;">
+                                        </div>
+                                        <div>
+                                            <div
+                                                style="display: flex; justify-content: space-between; font-size: 0.7rem; margin-bottom: 6px;">
+                                                <span>Competitor Pressure</span>
+                                                <span id="pressureVal">62%</span>
+                                            </div>
+                                            <input type="range" min="0" max="100" value="62" class="sim-range"
+                                                style="width: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary"
+                                    style="width: 100%; height: 48px; justify-content: center; font-size: 0.85rem;"
+                                    onclick="runSimulation()">RUN SCENARIO SIMULATION</button>
+                            </div>
+
+                            <!-- Right: Results -->
+                            <div class="glass" style="padding: 24px; border-radius: 16px; position: relative;">
+                                <div
+                                    style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; font-weight: 700;">
+                                    Simulation Analytics Result</div>
+
+                                <div id="simPlaceholder"
+                                    style="height: 300px; display: flex; align-items: center; justify-content: center; border: 1px dashed rgba(255,255,255,0.1); border-radius: 12px; margin-bottom: 24px;">
+                                    <div style="text-align: center; color: var(--text-secondary);">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.5"
+                                            style="opacity: 0.3; margin-bottom: 12px;">
+                                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                        </svg>
+                                        <div style="font-size: 0.85rem;">Initialize vectors to generate forecast
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+                                    <div class="metric-card-mini" style="background: rgba(0,210,255,0.05);">
+                                        <div class="metric-value-large" id="simRoi">--</div>
+                                        <div class="metric-label-mini">Projected ROI</div>
+                                    </div>
+                                    <div class="metric-card-mini">
+                                        <div class="metric-value-large" id="simAuthority">--</div>
+                                        <div class="metric-label-mini">Peak Authority</div>
+                                    </div>
+                                    <div class="metric-card-mini">
+                                        <div class="metric-value-large" id="simRisk">--</div>
+                                        <div class="metric-label-mini">Execution Risk</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics View -->
+                    <div id="analyticsView" class="hidden">
+                        <div
+                            style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px;">
+                            <div class="glass" style="padding: 24px;">
+                                <div style="font-size: 0.7rem; color: var(--primary-color); margin-bottom: 8px;">
+                                    GLOBAL REACH
+                                </div>
+                                <div style="font-size: 1.5rem; font-weight: 600;">200+ Countries</div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 4px;">
+                                    Real-time
+                                    cultural mapping</div>
+                            </div>
+                            <div class="glass" style="padding: 24px;">
+                                <div style="font-size: 0.7rem; color: var(--primary-color); margin-bottom: 8px;">
+                                    MARKET
+                                    SENTIMENT</div>
+                                <div style="font-size: 1.5rem; font-weight: 600;">Bullish (Tech)</div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 4px;">
+                                    Gen-Z preference
+                                    trending</div>
+                            </div>
+                            <div class="glass" style="padding: 24px;">
+                                <div style="font-size: 0.7rem; color: var(--primary-color); margin-bottom: 8px;">AI
+                                    VELOCITY
+                                </div>
+                                <div style="font-size: 1.5rem; font-weight: 600;">48.2 ms</div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 4px;">Avg
+                                    latency per
+                                    strategy</div>
+                            </div>
+                        </div>
+
+                        <div class="glass" style="padding: 32px;">
+                            <h3 style="margin-bottom: 1.5rem;">Market Trends Analysis</h3>
+                            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                                <div style="border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem;">
+                                    <div style="font-weight: 600; font-size: 0.9rem;">Sustainability in SAAS</div>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+                                        Increasing
+                                        demand for eco-friendly digital infrastructure.</p>
+                                </div>
+                                <div style="border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem;">
+                                    <div style="font-weight: 600; font-size: 0.9rem;">The "Human" AI Voice</div>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+                                        Brands are
+                                        moving towards more empathetic and conversational AI tones.</p>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; font-size: 0.9rem;">Hyper-Localization</div>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+                                        Global
+                                        campaigns must feel native to every local market.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Analytics View -->
+
+                    <!-- Strategy Model View -->
+                    <div id="strategyView" class="hidden">
+                        <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 24px;">
+                            <!-- Left Section: DNA Identity -->
+                            <div style="display: flex; flex-direction: column; gap: 24px;">
+                                <div class="glass" style="padding: 32px; border-radius: 20px;">
+                                    <div
+                                        style="font-size: 0.7rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px; font-weight: 700;">
+                                        Section 01 — DNA Identity</div>
+                                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                                        <div>
+                                            <div
+                                                style="font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 8px;">
+                                                Target Persona</div>
+                                            <div id="strategyPersona"
+                                                style="font-size: 1.1rem; font-weight: 600; color: #fff;">--</div>
+                                        </div>
+                                        <div>
+                                            <div
+                                                style="font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 8px;">
+                                                Market Category</div>
+                                            <div id="strategyCategory"
+                                                style="font-size: 1.1rem; font-weight: 600; color: #fff;">--</div>
+                                        </div>
+                                        <div>
+                                            <div
+                                                style="font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 8px;">
+                                                Strategic Positioning</div>
+                                            <div id="strategyStatement"
+                                                style="font-size: 1rem; font-family: 'Fraunces', serif; font-style: italic; color: #fff; line-height: 1.6; opacity: 0.9;">
+                                                --</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="glass" style="padding: 32px; border-radius: 20px;">
+                                    <div
+                                        style="font-size: 0.7rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px; font-weight: 700;">
+                                        Section 02 — Model Health</div>
+                                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                                        <div
+                                            style="display: flex; justify-content: space-between; align-items: center;">
+                                            <span style="font-size: 0.85rem; color: var(--text-secondary);">Model Sync
+                                                Accuracy</span>
+                                            <span
+                                                style="font-family: 'JetBrains Mono', monospace; color: #fff;">96.8%</span>
+                                        </div>
+                                        <div
+                                            style="display: flex; justify-content: space-between; align-items: center;">
+                                            <span style="font-size: 0.85rem; color: var(--text-secondary);">Market Pulse
+                                                Latency</span>
+                                            <span
+                                                style="font-family: 'JetBrains Mono', monospace; color: #fff;">45ms</span>
+                                        </div>
+                                        <div
+                                            style="display: flex; justify-content: space-between; align-items: center;">
+                                            <span style="font-size: 0.85rem; color: var(--text-secondary);">Vector
+                                                Relevancy</span>
+                                            <span
+                                                style="font-family: 'JetBrains Mono', monospace; color: #fff;">HIGH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Section: Core Vectors & Calibration -->
+                            <div class="glass" style="padding: 32px; border-radius: 20px;">
+                                <div
+                                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 32px;">
+                                    <div>
+                                        <div
+                                            style="font-size: 0.7rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; font-weight: 700;">
+                                            Section 03 — Vector Calibration</div>
+                                        <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace;">
+                                            STR-VEC-MAP-2026</h3>
+                                    </div>
+                                    <button class="btn btn-primary" style="padding: 8px 16px; font-size: 0.7rem;"
+                                        onclick="alert('Recalibrating Strategy Vectors...')">Recalibrate Model</button>
+                                </div>
+
+                                <!-- Vector Grid -->
+                                <div
+                                    style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 32px;">
+                                    <div class="metric-card-mini"
+                                        style="background: rgba(0, 210, 255, 0.05); text-align: left; padding: 24px;">
+                                        <div class="metric-value-large" id="strategyAuthority"
+                                            style="font-size: 2.2rem;">84</div>
+                                        <div class="metric-label-mini">Authority Index</div>
+                                        <div style="font-size: 0.65rem; color: #27c93f; margin-top: 4px;">+2.4% Increase
+                                            Predicted</div>
+                                    </div>
+                                    <div class="metric-card-mini"
+                                        style="background: rgba(195, 157, 255, 0.05); text-align: left; padding: 24px;">
+                                        <div class="metric-value-large" id="strategyPressure"
+                                            style="font-size: 2.2rem; color: var(--accent-purple);">Med</div>
+                                        <div class="metric-label-mini">Market Pressure</div>
+                                        <div style="font-size: 0.65rem; color: var(--text-secondary); margin-top: 4px;">
+                                            Dynamic Stabilization Active</div>
+                                    </div>
+                                    <div class="metric-card-mini"
+                                        style="background: rgba(255, 255, 255, 0.02); text-align: left; padding: 24px;">
+                                        <div class="metric-value-large" id="strategyDiff"
+                                            style="font-size: 2.2rem; color: #fff;">High</div>
+                                        <div class="metric-label-mini">Diff Score</div>
+                                        <div style="font-size: 0.65rem; color: var(--text-secondary); margin-top: 4px;">
+                                            Competitive Edge: Verified</div>
+                                    </div>
+                                    <div class="metric-card-mini"
+                                        style="background: rgba(255, 95, 86, 0.05); text-align: left; padding: 24px;">
+                                        <div class="metric-value-large" id="strategyRisk"
+                                            style="font-size: 2.2rem; color: #ff5f56;">Low</div>
+                                        <div class="metric-label-mini">Strategic Risk</div>
+                                        <div style="font-size: 0.65rem; color: #ff5f56; margin-top: 4px;">Safety Vectors
+                                            Engaged</div>
+                                    </div>
+                                </div>
+
+                                <!-- Growth Trajectory -->
+                                <div class="glass"
+                                    style="padding: 24px; border-radius: 12px; background: rgba(255,255,255,0.01);">
+                                    <div
+                                        style="font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 16px;">
+                                        Model Growth Trajectory</div>
+                                    <div id="strategyTrajectory"
+                                        style="height: 120px; display: flex; align-items: flex-end; gap: 12px; padding: 0 10px;">
+                                        <!-- Injected by JS -->
+                                    </div>
+                                    <div
+                                        style="display: flex; justify-content: space-between; margin-top: 12px; font-size: 0.65rem; color: var(--text-secondary);">
+                                        <span>Q1 PREV</span>
+                                        <span>CURRENT SYSTEM TIME</span>
+                                        <span>PROJECTED REACH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Strategy Model View -->
+                </div> <!-- End Views Container -->
+            </div> <!-- End .main-content-inner -->
         </section>
 
         <aside class="intelligence-panel">
-            <div style="font-size: 0.65rem; color: var(--primary-color); text-transform: uppercase; margin-bottom: 24px;">Global Analytics</div>
-            <div id="metricsGrid" class="glass" style="padding: 20px;">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
-                    <span>Authority</span>
-                    <span id="rightMetricAuthority">--</span>
+            <div style="margin-bottom: 32px;">
+                <div style="font-size: 0.65rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px; font-weight: 700;">Intelligence Snapshot</div>
+                
+                <div class="glass" style="padding: 20px; border-radius: 12px; margin-bottom: 16px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                        <span style="font-size: 0.75rem; color: var(--text-secondary);">Authority</span>
+                        <span id="rightMetricAuthority" style="font-family: 'JetBrains Mono', monospace; color: #fff;">--</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                        <span style="font-size: 0.75rem; color: var(--text-secondary);">Pressure</span>
+                        <span id="rightMetricPressure" style="font-family: 'JetBrains Mono', monospace; color: var(--accent-purple);">--</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.75rem; color: var(--text-secondary);">Strategic Risk</span>
+                        <span id="rightMetricRisk" style="font-family: 'JetBrains Mono', monospace; color: #ff5f56;">--</span>
+                    </div>
                 </div>
+
+                <div id="rightTrajectoryContainer" style="height: 60px; display: flex; align-items: flex-end; gap: 4px; padding: 0 8px; margin-bottom: 16px;"></div>
             </div>
-            
-            <div style="margin-top: 32px; border-top: 1px solid var(--glass-border); padding-top: 24px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                    <span>Command Log</span>
-                    <button class="btn-pill" style="font-size: 0.6rem;" onclick="clearHistory()">Clear</button>
+
+            <div style="border-top: 1px solid var(--glass-border); padding-top: 32px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                    <div style="font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 2px; font-weight: 700;">Command Log</div>
+                    <button class="btn-pill" style="padding: 4px 12px; font-size: 0.65rem; background: rgba(255,255,255,0.05);" onclick="clearHistory()">Clear</button>
                 </div>
-                <div id="historyList"></div>
+                <div id="historyList" style="display: flex; flex-direction: column; gap: 12px;">
+                    <!-- Injected via main.js -->
+                </div>
             </div>
         </aside>
     </main>
 
+    <!-- Edit Modals (DNA Snapshot) -->
+    <div id="editTaglineModal" class="modal-overlay hidden">
+        <div class="modal-card glass" style="max-width: 500px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <h3 style="margin: 0; font-family: 'Fraunces', serif; font-style: italic;">Edit Tagline</h3>
+                <button class="modal-close" onclick="closeEditModal('tagline')">×</button>
+            </div>
+            <textarea id="editTaglineInput" class="glass"
+                style="width: 100%; height: 100px; padding: 16px; border-radius: 12px; border: 1px solid var(--glass-border); color: white; margin-bottom: 24px; resize: none;"></textarea>
+            <button class="btn btn-primary" style="width: 100%;" onclick="saveEdit('tagline')">Apply Changes</button>
+        </div>
+    </div>
+
+    <div id="editAestheticModal" class="modal-overlay hidden">
+        <div class="modal-card glass" style="max-width: 500px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <h3 style="margin: 0; font-family: 'Fraunces', serif; font-style: italic;">Brand Aesthetic</h3>
+                <button class="modal-close" onclick="closeEditModal('aesthetic')">×</button>
+            </div>
+            <input type="text" id="editAestheticInput" class="glass"
+                style="width: 100%; padding: 16px; border-radius: 12px; border: 1px solid var(--glass-border); color: white; margin-bottom: 24px;">
+            <button class="btn btn-primary" style="width: 100%;" onclick="saveEdit('aesthetic')">Apply Changes</button>
+        </div>
+    </div>
+
+    <!-- Generic Chip Modal (For Values and Tone) -->
+    <div id="editChipsModal" class="modal-overlay hidden">
+        <div class="modal-card glass" style="text-align: left; max-width: 480px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <h3 id="chipsModalTitle" style="margin: 0;">Brand values</h3>
+                <button class="modal-close" onclick="closeEditModal('chips')">×</button>
+            </div>
+            <p id="chipsModalSub" style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 32px;">
+                Describe your brand's values</p>
+
+            <div class="chip-input-container"
+                style="border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 16px; position: relative; margin-bottom: 40px;">
+                <label
+                    style="position: absolute; top: -10px; left: 16px; background: #111; padding: 0 8px; font-size: 0.75rem; color: var(--text-secondary);">Press
+                    Enter to add a new brand value...</label>
+                <div id="modalChipsList" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+                    <!-- Injected -->
+                </div>
+                <input type="text" id="chipInput" placeholder="..."
+                    style="background: none; border: none; color: white; outline: none; width: 100%; font-size: 0.95rem;">
+            </div>
+
+            <button class="btn btn-primary" style="width: 100%;" id="chipApplyBtn"
+                onclick="saveEdit('chips')">Apply</button>
+        </div>
+    </div>
+
+    <!-- Font Selector Modal -->
+    <div id="editFontsModal" class="modal-overlay hidden">
+        <div class="modal-card glass" style="text-align: left; max-width: 480px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <h3 style="margin: 0;">Fonts</h3>
+                <button class="modal-close" onclick="closeEditModal('fonts')">×</button>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 32px;">Choose up to two fonts for
+                your business</p>
+
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px;">
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <div id="fontPreviewLetter" style="font-size: 2.5rem; color: #d0e19a;">Aa</div>
+                    <div id="fontPreviewName" style="color: var(--text-secondary); font-size: 0.85rem;">sans-serif</div>
+                </div>
+                <button class="btn-pill"
+                    style="padding: 8px 16px; font-size: 0.85rem; background: rgba(208,225,154,0.1); color: #d0e19a; border: 1px solid rgba(208,225,154,0.2);">+
+                    Add font</button>
+            </div>
+
+            <div class="font-search-container" style="margin-bottom: 24px; position: relative;">
+                <svg style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); opacity: 0.5;"
+                    width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input type="text" id="fontSearch" class="glass" placeholder="Search fonts"
+                    style="width: 100%; padding: 12px 12px 12px 48px; border-radius: 30px; border: 1px solid var(--glass-border); color: white;">
+            </div>
+
+            <div class="font-list-scroll"
+                style="max-height: 250px; overflow-y: auto; background: rgba(255,255,255,0.03); border-radius: 12px; border: 1px solid var(--glass-border);">
+                <div style="padding: 12px 16px; font-size: 0.75rem; color: #d0e19a; text-transform: uppercase;">From
+                    your business</div>
+                <div id="businessFontsList">
+                    <!-- Injected -->
+                </div>
+                <div
+                    style="padding: 12px 16px; font-size: 0.75rem; color: #d0e19a; text-transform: uppercase; border-top: 1px solid rgba(255,255,255,0.05);">
+                    From Google Fonts</div>
+                <div id="googleFontsList">
+                    <!-- Injected -->
+                </div>
+            </div>
+
+            <div style="margin-top: 16px; font-size: 0.85rem; color: var(--text-secondary);">
+                Browse font details at <a href="https://fonts.google.com" target="_blank"
+                    style="color: #d0e19a; text-decoration: none;">Google Fonts</a>
+            </div>
+
+            <button class="btn btn-primary"
+                style="width: 100%; margin-top: 24px; background: #333; color: #666; border: none;" id="fontApplyBtn"
+                onclick="saveEdit('fonts')">Apply</button>
+        </div>
+    </div>
+    <!-- Image Lightbox Modal -->
+    <div id="imageLightboxModal" class="modal-overlay hidden" onclick="closeLightbox(event)">
+        <div class="lightbox-content" style="position: relative; max-width: 90vw; max-height: 90vh;">
+            <button class="modal-close" onclick="closeLightbox(event)"
+                style="position: absolute; top: -50px; right: -10px; background: rgba(0,0,0,0.5); border: 2px solid white; color: white;">×</button>
+            <img id="lightboxImage" src=""
+                style="max-width: 100%; max-height: 85vh; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.8); border: 1px solid rgba(255,255,255,0.2);">
+        </div>
+    </div>
+
+
     <script src="main.js"></script>
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
