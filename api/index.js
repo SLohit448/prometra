@@ -1,50 +1,39 @@
-const express = require('express');
-const cors = require('cors');
+module.exports = async (req, res) => {
+    // Natively handle CORS (No packages needed)
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-const app = express();
-app.use(cors());
-app.use(express.json());
+    if (req.method === 'OPTIONS') { return res.status(200).end(); }
 
-let identities = [];
-let history = [];
+    const path = req.url.split('?')[0];
 
-app.post('/api/analyze', (req, res) => {
-    const { website } = req.body;
-    if (!website) return res.status(400).json({ error: 'URL required' });
-    
-    const domain = website.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('/')[0].toLowerCase();
-    const brandName = domain.split('.')[0].charAt(0).toUpperCase() + domain.split('.')[0].slice(1);
-    
-    const dna = {
-        website: domain,
-        brandName,
-        tagline: `Redefining the digital boundary for ${brandName}.`,
-        industry: "Global AI Enterprise",
-        tone: "Ethereal & Precise",
-        aesthetic: "Noir Minimalist",
-        overview: `${brandName} is positioned as a disruptive force in the vertical.`,
-        values: ["Innovation", "Integrity", "Speed"],
-        hub: { website: "• Deploy a 'Synaptic Interface' to lead technical intent.", growth: "• Target high-velocity markets for expansion." },
-        insights: "• Leverage 'Silent Authority' to signal premium positioning."
-    };
-    
-    identities.push({...dna, created_at: new Date()});
-    res.json(dna);
-});
+    // Respond natively to the Scanner without Express
+    if (path === '/api/analyze' || path === '/analyze') {
+        const website = req.body?.website || 'prometra.ai';
+        const domain = website.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('/')[0].toLowerCase();
+        const brandName = domain.split('.')[0].charAt(0).toUpperCase() + domain.split('.')[0].slice(1);
+        
+        return res.status(200).json({
+            website: domain,
+            brandName: brandName,
+            tagline: `Redefining the digital boundary for ${brandName}.`,
+            industry: "Global Analysis AI",
+            tone: "Ethereal & Precise",
+            aesthetic: "Noir Minimalist",
+            overview: `${brandName} is an emerging leader in enterprise transformation.`,
+            values: ["Innovation", "Integrity", "Velocity"],
+            font: "Inter",
+            colors: ["#a0e9ff", "#8b5cf6"],
+            hub: { website: "Deploy a custom Synaptic Interface.", growth: "Focus on high-leverage digital assets." },
+            insights: "Use the Intelligence Panel to track real-time commands."
+        });
+    }
 
-app.post('/api/generate', (req, res) => {
-    const { prompt, context } = req.body;
-    const result = `📦 STRATEGY BLUEPRINT\n\n1. OBJECTIVE: ${prompt}\n2. CONTEXT: ${context?.brandName || 'Global Brand'}\n3. EXECUTION: Deploy high-density market resonance model.`;
-    history.push({prompt, platform: "Strategy Builder", result, timestamp: new Date()});
-    res.json({ result });
-});
+    if (path === '/api/generate' || path === '/generate') {
+        const result = `📦 STRATEGY BLUEPRINT\n1. OBJECTIVE: Synthesis\n2. EXECUTION: Deploy high-density resonance model.`;
+        return res.status(200).json({ result });
+    }
 
-app.get('/api/history', (req, res) => { 
-    res.json([...history].sort((a,b) => b.timestamp - a.timestamp)); 
-});
-app.delete('/api/history', (req, res) => { 
-    history = []; 
-    res.json({ success: true }); 
-});
-
-module.exports = app;
+    return res.status(404).json({ error: 'Endpoint not found' });
+};
