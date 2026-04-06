@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prometra | AI-Powered Global Marketing Enterprise</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Landing Page View -->
+    <div id="pageWrapper">
+        <div class="labs-brand">
+            <div class="labs-logo"></div>
+            <span>Prometra Labs</span>
+        </div>
+
+        <!-- Top-Right Menu & Account (Landing) -->
+        <div class="top-right-icons" id="landingTopIcons">
+            <button class="icon-btn" onclick="toggleTopMenuLanding()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <circle cx="12" cy="5" r="2" />
+                    <circle cx="12" cy="12" r="2" />
+                    <circle cx="12" cy="19" r="2" />
+                </svg>
+            </button>
+            <button class="icon-btn profile-avatar" onclick="toggleProfileMenuLanding()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 20c0-4 4-7 8-7s8 3 8 7" />
+                </svg>
+            </button>
+            <div id="topMenuDropdownLanding" class="top-dropdown hidden">
+                <a href="#" onclick="event.preventDefault()">Settings</a>
+                <a href="#" onclick="event.preventDefault()">Help & Feedback</a>
+                <a href="#" onclick="event.preventDefault()">About Prometra</a>
+            </div>
+            <div id="profileDropdownLanding" class="top-dropdown profile-dropdown hidden">
+                <div style="padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: center;">
+                    <div class="profile-avatar-large">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 20c0-4 4-7 8-7s8 3 8 7" />
+                        </svg>
+                    </div>
+                    <div style="font-weight: 600; margin-top: 8px;">User</div>
+                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Prometra Free Tier</div>
+                </div>
+                <a href="#" onclick="event.preventDefault()">Manage Account</a>
+                <a href="#" onclick="event.preventDefault()">Sign Out</a>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero"
+            style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; padding: 100px 20px;">
+
+            <!-- Floating Assets -->
+            <div class="hero-asset asset-top-left"
+                style="animation-delay: 0s; background: rgba(160, 233, 255, 0.05); border: 1px solid var(--primary-color);">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                            <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:0.2" />
+                            <stop offset="100%" style="stop-color:transparent;stop-opacity:0" />
+                        </radialGradient>
+                    </defs>
+                    <circle cx="60" cy="60" r="50" fill="url(#grad1)" />
+                    <path d="M30 60 L90 60 M60 30 L60 90" stroke="var(--primary-color)" stroke-width="0.5"
+                        opacity="0.3" />
+                </svg>
+            </div>
+
+            <div style="position: relative; z-index: 10;">
+                <h1
+                    style="font-size: clamp(4.5rem, 12vw, 8.5rem); margin-bottom: 24px; font-style: italic; letter-spacing: -0.04em;">
+                    Prometra</h1>
+                <p
+                    style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 48px; max-width: 550px; margin-left: auto; margin-right: auto; line-height: 1.5; opacity: 0.8; font-weight: 300;">
+                    Synthesize your global strategy with AI that breathes your brand's unique identity.</p>
+                <button class="btn-pill" onclick="startOnboarding()"
+                    style="background: var(--primary-color); color: var(--bg-color); font-weight: 600; box-shadow: 0 10px 30px rgba(160, 233, 255, 0.2);">Begin
+                    the Journey</button>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Onboarding Section -->
+    <section id="onboardingSection" class="onboarding-container hidden">
+    </section>
+
+    <!-- Dashboard Section (3-Zone) -->
+    <main id="appSection" class="app-container hidden">
+        <aside class="sidebar glass">
+        </aside>
+        
+        <div class="top-strategy-bar">
+        </div>
+
+        <section class="main-content">
+            <div class="main-content-inner">
+            </div>
+        </section>
+
+        <aside class="intelligence-panel">
+            <div style="font-size: 0.65rem; color: var(--primary-color); text-transform: uppercase; margin-bottom: 24px;">Global Analytics</div>
+            <div id="metricsGrid" class="glass" style="padding: 20px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                    <span>Authority</span>
+                    <span id="rightMetricAuthority">--</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 32px; border-top: 1px solid var(--glass-border); padding-top: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <span>Command Log</span>
+                    <button class="btn-pill" style="font-size: 0.6rem;" onclick="clearHistory()">Clear</button>
+                </div>
+                <div id="historyList"></div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

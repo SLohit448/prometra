@@ -1,0 +1,4 @@
+node_modules
+prometra.db
+.env
+.DS_Store
