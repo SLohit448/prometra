@@ -61,57 +61,12 @@ function showStep(step) {
 
 async function performServerAnalysis() {
     const startTime = Date.now();
-    const status = document.getElementById('analysisStatus');
-    const hud = document.getElementById('hudStatus');
-    const previewImg = document.getElementById('analysisPreviewImage');
-    const link = document.getElementById('analysisWebsiteLink');
-    if (link) link.innerText = `https://${state.dna.website}`;
-
-    // 1. Trigger High-Fidelity Capture (Microlink)
-    if (previewImg) {
-        const loader = document.getElementById('previewLoader');
-        previewImg.style.opacity = '0';
-        if (loader) loader.style.display = 'block';
-        if (hud) hud.innerText = "WAITING_FOR_HANDSHAKE...";
-
-        // Site capture removed in favor of animated Brand Map visualization
-        if (loader) loader.style.display = 'none';
-        if (hud) hud.innerText = "SIGNAL_ACQUISITION_ACTIVE";
-    }
-
-    const phases = [
-        { time: 0, msg: "Mapping Brand Signals...", hud: "OS_HANDSHAKE_OK", color: "#1c2601", text: "#a0e9ff" },
-        { time: 2500, msg: "Scanning Market Patterns...", hud: "RENDER_STREAM_SYNC", color: "#a1c8b0", text: "#1c2601" },
-        { time: 5000, msg: "Building Strategy Graph...", hud: "LEXICAL_ANALYSIS_V2", color: "#c39dff", text: "#0a0a0f" },
-        { time: 7500, msg: "Indexing Business Data...", hud: "COLOR_VIBRANCE_SCAN", color: "#d0e19a", text: "#1c2601" },
-        { time: 10000, msg: "Mapping market competitive vectors...", hud: "COMPETITIVE_NEURAL_MAP", color: "#ffffff", text: "#050508" },
-        { time: 12500, msg: "Constructing Intelligence Core...", hud: "LINGUISTIC_PROFILING", color: "#a1c8c0", text: "#0a0f0a" },
-        { time: 15000, msg: "Calibrating industry alignment...", hud: "VERTICAL_SYNC_BETA", color: "#a0e9ff", text: "#1c2601" },
-        { time: 17500, msg: "Manifesting Growth Blueprint...", hud: "DNA_FINAL_COHESION", color: "#c39dff", text: "#0a0a0f" },
-        { time: 19000, msg: "Finalizing strategic model...", hud: "SYSTEM_SYNC_COMPLETE", color: "#d0e19a", text: "#1c2601" }
-    ];
-
-    let currentPhase = 0;
+    
     const interval = setInterval(() => {
-        const elapsed = Date.now() - startTime;
-        if (currentPhase < phases.length && elapsed >= phases[currentPhase].time) {
-            const phase = phases[currentPhase];
-            if (status) status.innerText = phase.msg;
-            if (hud) hud.innerText = phase.hud;
-
-            const statusBox = document.getElementById('analysisStatusBox');
-            if (statusBox) {
-                statusBox.style.background = phase.color;
-                statusBox.style.color = phase.text;
-                statusBox.style.borderColor = phase.text + '33';
-            }
-
-            currentPhase++;
-        }
+        updateStatusText();
     }, 500);
 
-        try {
-        // Bypass the backend entirely for the standalone demo
+    try {
         state.dna = {
             website: state.dna.website || "prometra.ai",
             brandName: "Persona AI",
@@ -138,9 +93,6 @@ async function performServerAnalysis() {
 
     } catch (err) {
         clearInterval(interval);
-        showStep(2);
-    }
-
         showStep(2);
     }
 }
